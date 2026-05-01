@@ -2,7 +2,7 @@
   {
     "id": "tile_001",
     "title": "Ceramic Blue Tile",
-    "description": "Premium ceramic tile with blue glaze finish",
+    "description": "Transform your living spaces with our premium ceramic tiles, featuring a stunning deep blue glaze finish that captures the essence of modern elegance. These tiles offer a perfect blend of high durability and sophisticated aesthetics",
     "image": "https://i.ibb.co.com/sddj8n2W/tile-image.jpg",
     "category": "ceramic",
     "price": 45.99,
@@ -14,7 +14,7 @@
   {
     "id": "tile_002",
     "title": "Marble White Tile",
-    "description": "Elegant white marble for floors",
+    "description": "Elevate your home's flooring with our elegant white marble tiles, featuring delicate natural veining and a smooth, polished finish. These tiles bring a luxurious feel and unparalleled durability to any room.",
     "image": "https://i.ibb.co.com/1tk4xTLX/tile-2.jpg",
     "category": "marble",
     "price": 85.50,
@@ -26,7 +26,7 @@
   {
     "id": "tile_003",
     "title": "Wooden Texture Tile",
-    "description": "Natural oak wood finish for a cozy feel",
+    "description": "Bring the warmth of nature indoors with our premium tiles featuring a natural oak wood finish, designed to create a cozy and inviting atmosphere. These tiles replicate the authentic grain of real oak while offering superior durability and easy maintenance.",
     "image": "https://i.ibb.co.com/DPhs7jv2/image.jpg",
     "category": "wood",
     "price": 32.25,
@@ -38,7 +38,7 @@
   {
     "id": "tile_004",
     "title": "Grey Granite Tile",
-    "description": "Heavy duty granite tile for outdoor use",
+    "description": "Engineered for extreme durability, our heavy-duty granite tiles are the ultimate solution for outdoor spaces. These tiles feature a weather-resistant surface designed to withstand heavy traffic and harsh conditions while providing a safe, slip-resistant foundation.",
     "image": "https://i.ibb.co.com/qYSf5p5D/image.jpg",
     "category": "granite",
     "price": 60.00,
@@ -50,7 +50,7 @@
   {
     "id": "tile_005",
     "title": "Terracotta Clay Tile",
-    "description": "Traditional handmade terracotta tiles",
+    "description": "Embrace the rustic charm of traditional craftsmanship with our handmade terracotta tiles, uniquely crafted to bring an earthy and timeless feel. Featuring warm, sun-baked tones and natural textures, these eco-friendly tiles are perfect for adding character to kitchens and patios.",
     "image": "https://i.ibb.co.com/2RqvjVn/image.jpg",
     "category": "clay",
     "price": 25.00,
@@ -62,7 +62,7 @@
   {
     "id": "tile_006",
     "title": "Black Slate Tile",
-    "description": "Dark sophisticated slate for modern bathrooms",
+    "description": "Transform your bathroom into a modern sanctuary with our dark, sophisticated slate tiles, featuring deep charcoal tones and a unique slip-resistant texture. These resilient tiles blend rugged natural beauty with urban style, making them ideal for luxury shower areas and contemporary spaces",
     "image": "https://i.ibb.co.com/nMfJkHRC/image.jpg",
     "category": "slate",
     "price": 55.40,
@@ -74,7 +74,7 @@
   {
     "id": "tile_007",
     "title": "Moroccan Pattern Tile",
-    "description": "Colorful artistic patterns for wall decor",
+    "description": "Turn any plain wall into a stunning focal point with our colorful artistic pattern tiles, featuring intricate motifs and vibrant hues. Perfect for accent walls and backsplashes, these durable tiles blend traditional artistry with contemporary flair for a truly unique decor",
     "image": "https://i.ibb.co.com/672ZptcH/image.jpg",
     "category": "artistic",
     "price": 70.99,
@@ -86,7 +86,7 @@
   {
     "id": "tile_008",
     "title": "Polished Concrete Tile",
-    "description": "Industrial style polished concrete finish",
+    "description": "Achieve a bold, urban look with our industrial-style polished concrete tiles, featuring a smooth high-gloss finish and subtle tonal variations. Engineered for exceptional strength and low maintenance, they are the perfect choice for minimalist lofts and contemporary commercial spaces.",
     "image": "https://i.ibb.co.com/d4Nz9GbQ/image.jpg",
     "category": "concrete",
     "price": 40.00,
@@ -98,7 +98,7 @@
   {
     "id": "tile_009",
     "title": "Gold Vein Quartz",
-    "description": "Luxury quartz with golden veins",
+    "description": "Define luxury with our exquisite quartz tiles, showcasing a brilliant white surface infused with breathtaking golden veins. Engineered for opulence and resilience, these non-porous and scratch-resistant tiles add a layer of prestige and warmth to any high-end interior design.",
     "image": "https://i.ibb.co.com/7JNTrLnp/image.jpg",
     "category": "quartz",
     "price": 120.00,
@@ -110,7 +110,7 @@
   {
     "id": "tile_010",
     "title": "Glass Mosaic Tile",
-    "description": "Miniature glass tiles for swimming pools",
+    "description": "Dive into luxury with our miniature glass tiles, crafted to bring a shimmering, crystal-clear aesthetic to swimming pools and aquatic features. These chemical-resistant and fade-proof tiles reflect sunlight to create a stunning underwater glow, perfect for spas and fountains.",
     "image": "https://i.ibb.co.com/JRGVhTMc/image.jpg",
     "category": "glass",
     "price": 50.00,
@@ -118,5 +118,5 @@
     "dimensions": "30x30 cm",
     "material": "Glass",
     "inStock": true
-  }
+  } 
 ]
