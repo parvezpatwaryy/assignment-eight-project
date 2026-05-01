@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-
+import userAvater from '@/../public/download.png'
+import NavLink from './NavLink';
 const Navbar = () => {
   return (
     <div className="max-lg:collapse bg-white shadow-sm w-full rounded-md">
@@ -31,15 +32,17 @@ const Navbar = () => {
 
         <div className="navbar-center hidden lg:flex">
           <ul className="text-gray-600 menu menu-horizontal px-1 font-semibold">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/all-tiles">All Tiles</Link></li>
-            <li><Link href="/profile">My Profile</Link></li>
+            <li><NavLink href="/">Home</NavLink></li>
+            <li><NavLink href="/all-tiles">All Tiles</NavLink></li>
+            <li><NavLink href="/profile">My Profile</NavLink></li>
           </ul>
         </div>
 
         <div className="navbar-end pr-10 font-bold gap-5">
-          <button className='btn text-red-500'>Logout</button>
-          <button className='btn text-red-500'>Login</button>
+            <Image src={userAvater} alt='user avatar' width={60} height={60}/>
+          <button className='btn text-red-500'>
+          <Link href={'/login'}>Login</Link>
+          </button>
         </div>
       </div>
 
