@@ -5,10 +5,8 @@ const ProfilePage = () => {
     <div className="min-h-screen bg-base-200 flex justify-center items-center p-5">
       <div className="card w-full max-w-md bg-base-100 shadow-xl border border-gray-200">
         <figure className="px-10 pt-10">
-          {/* ইউজার ইমেজ */}
           <div className="avatar">
             <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-              {/* এখানে আপনার আসল ছবির লিঙ্ক দিন */}
               <img src="https://via.placeholder.com/150" alt="Profile" />
             </div>
           </div>

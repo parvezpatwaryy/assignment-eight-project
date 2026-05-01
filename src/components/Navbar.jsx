@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import userAvater from '@/../public/download.png'
 import NavLink from './NavLink';
+import { FaGoogle } from "react-icons/fa6";
 const Navbar = () => {
   return (
     <div className="max-lg:collapse bg-white shadow-sm w-full rounded-md">
@@ -43,6 +44,8 @@ const Navbar = () => {
           <button className='btn text-red-500'>
           <Link href={'/login'}>Login</Link>
           </button>
+          <button className='flex items-center gap-2 text-green-500'><FaGoogle />Google</button>
+          {/* <input type="text" className='border-2' /> */}
         </div>
       </div>
 
