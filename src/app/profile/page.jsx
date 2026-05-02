@@ -1,6 +1,6 @@
 'use client';
 import { authClient } from "@/lib/auth-client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const ProfilePage = () => {
@@ -8,9 +8,14 @@ const ProfilePage = () => {
   const [newName, setNewName] = useState("");
   const [newPhoto, setNewPhoto] = useState("");
   const router = useRouter();
+  useEffect(() => {
+    if (!isPending && !session) {
+      router.push("/login");
+    }
+  }, [session, isPending, router]);
 
   if (isPending) return <p className="text-center mt-20">Loading...</p>;
-  if (!session) return router.push("/login");
+  if (!session) return null;
 
   const handleUpdate = async (e) => {
     e.preventDefault();
@@ -19,7 +24,7 @@ const ProfilePage = () => {
         name: newName || session.user.name,
         image: newPhoto || session.user.image,
       });
-      alert("profile is updeted");
+      alert("profile is updated");
     } catch (error) {
       console.error("Error updating profile:", error);
     }

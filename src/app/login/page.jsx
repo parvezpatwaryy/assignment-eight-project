@@ -14,7 +14,7 @@ const LoginPage = () => {
       rememberMe:true,
       callbackURL:"/"
     })
-    console.log(res,error)
+    console.log(error, res)
   }
   
   return (

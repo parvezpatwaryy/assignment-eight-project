@@ -1,9 +1,15 @@
+"use client"
 import Link from 'next/link';
 import Image from 'next/image';
 import userAvater from '@/../public/download.png'
 import NavLink from './NavLink';
 import { FaGoogle } from "react-icons/fa6";
+import { authClient } from '@/lib/auth-client';
+
 const Navbar = () => {
+  const { data: session } = authClient.useSession();
+  const user = session?.user;
+
   return (
     <div className="max-lg:collapse bg-white shadow-sm w-full rounded-md">
       <input id="navbar-1-toggle" className="peer hidden" type="checkbox" />
@@ -16,9 +22,9 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          
+
           <Link href="/">
-            <figure className="px-4 flex items-center"> 
+            <figure className="px-4 flex items-center">
               <Image
                 src="/logo.png"
                 alt="Logo"
@@ -40,12 +46,32 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end pr-10 font-bold gap-5">
-            <Image src={userAvater} alt='user avatar' width={60} height={60}/>
-          <button className='btn text-red-500'>
-          <Link href={'/login'}>Login</Link>
-          </button>
-          <button className='flex items-center gap-2 text-green-500'><FaGoogle />Google</button>
-          {/* <input type="text" className='border-2' /> */}
+          {user ? (
+            <>
+              <Image
+                src={user?.image || userAvater}
+                alt='user avatar'
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <button className='btn text-red-500' onClick={() => authClient.signOut()}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link href='/login'>
+                <button className='btn text-blue-500'>Login</button>
+              </Link>
+              <button
+                className='flex items-center gap-2 text-green-500 btn'
+                onClick={() => authClient.signIn.social({ provider: 'google' })}
+              >
+                <FaGoogle /> Login with Google
+              </button>
+            </>
+          )}
         </div>
       </div>
 

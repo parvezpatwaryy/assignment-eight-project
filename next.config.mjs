@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.ibb.co',
       },
+      {
+        protocol: 'https',
+        hostname: 'encrypted-tbn0.gstatic.com', // এই লাইনটি যোগ করুন
+      },
     ],
   },
 };
