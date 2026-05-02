@@ -1,3 +1,4 @@
+import 'animate.css';
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import themes from './../../node_modules/daisyui/theme/object.d';
